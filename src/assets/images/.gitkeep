@@ -1,0 +1,12 @@
+# Đặt ảnh cưới của bạn vào thư mục này.
+#
+# Tên file gợi ý (khớp với src/data/wedding.json):
+#   hero.jpg                 — ảnh nền hero
+#   groom.jpg / bride.jpg    — ảnh chân dung cô dâu / chú rể
+#   story-1.jpg ... story-5.jpg — ảnh timeline tình yêu
+#   gallery-1.jpg ... gallery-8.jpg — ảnh album cưới
+#   qr-groom.png / qr-bride.png — QR mừng cưới
+#   wedding-film.mp4 + video-poster.jpg — video cưới (tuỳ chọn)
+#
+# Bạn chỉ cần đảm bảo *tên file* trong wedding.json trùng với tên file thực tế.
+# Đường dẫn /src/assets/images/xxx.jpg trong JSON sẽ được Vite tự resolve.

@@ -1,0 +1,8 @@
+# Đặt file nhạc nền (.mp3) vào thư mục này.
+#
+# Tên file gợi ý (khớp với src/data/wedding.json):
+#   perfect.mp3
+#   a-thousand-years.mp3
+#
+# Nhạc sẽ tự autoplay ngay sau khi user mở thiệp (sau cử chỉ click).
+# Nếu thư mục trống, nút nhạc sẽ tự ẩn.

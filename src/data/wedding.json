@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "Save the Date",
+    "subtitle": "Together with our families",
+    "language": "vi",
+    "image": "/src/assets/images/bia/1.jpg"
+  },
+  "couple": {
+    "groom": {
+      "name": "Hoàng Long",
+      "fullName": "Nguyễn Hoàng Long",
+      "role": "Chú rể",
+      "father": "Ông Nguyễn Hoàng Vân",
+      "mother": "Bà Trần Thị Minh Trang",
+      "bio": "Người tin rằng cô ấy chính là điều dịu dàng nhất mà cuộc đời từng gửi đến.",
+      "avatar": "/src/assets/images/5t 13x18 lua/VHH_6052.jpg"
+    },
+    "bride": {
+      "name": "Thu Phương",
+      "fullName": "Nguyễn Thị Thu Phương",
+      "role": "Cô dâu",
+      "father": "Ông Nguyễn Thành Tâm",
+      "mother": "Bà Nguyễn Thị Hà",
+      "bio": "Người đã tìm thấy bình yên trong một ánh nhìn rất khẽ.",
+      "avatar": "/src/assets/images/5t 13x18 lua/VHH_5712.jpg"
+    }
+  },
+  "families": {
+    "title": "Hai bên gia đình",
+    "subtitle": "Trân trọng kính báo lễ thành hôn",
+    "ornament": "❦",
+    "groom": {
+      "label": "Nhà trai",
+      "address": "792, Xa lộ Hà Nội, Khu phố 2, Tam Hiệp, Tp. Đồng Nai"
+    },
+    "bride": {
+      "label": "Nhà gái",
+      "address": "Thôn Bích Trung, Tam Xuân, TP. Đà Nẵng"
+    }
+  },
+  "event": {
+    "date": "2026-06-06",
+    "time": "17:30",
+    "displayDate": "Thứ bảy, ngày 06 tháng 06 năm 2026",
+    "ceremony": {
+      "side": "bride",
+      "sideLabel": "Nhà gái",
+      "label": "Lễ Vu Quy",
+      "date": "2026-06-06",
+      "time": "09:00",
+      "displayDate": "Thứ bảy, ngày 06 tháng 06 năm 2026",
+      "venue": "Tư gia nhà gái",
+      "address": "Thôn Bích Trung, Tam Xuân, TP. Đà Nẵng",
+      "mapEmbed": "https://www.google.com/maps?q=Th%C3%B4n+B%C3%ADch+Trung+Tam+Xu%C3%A2n+%C4%90%C3%A0+N%E1%BA%B5ng&output=embed",
+      "mapLink": "https://maps.google.com/?q=Th%C3%B4n+B%C3%ADch+Trung+Tam+Xu%C3%A2n+%C4%90%C3%A0+N%E1%BA%B5ng"
+    },
+    "reception": {
+      "side": "groom",
+      "sideLabel": "Nhà trai",
+      "label": "Lễ Tân Hôn",
+      "date": "2026-06-13",
+      "time": "09:00",
+      "displayDate": "Thứ bảy, ngày 13 tháng 06 năm 2026",
+      "venue": "Thiên Ân Palace",
+      "address": "792, Xa lộ Hà Nội, Khu phố 2, Tam Hiệp, Tp. Đồng Nai",
+      "mapEmbed": "https://www.google.com/maps?q=792+Xa+l%E1%BB%99+H%C3%A0+N%E1%BB%99i+Tam+Hi%E1%BB%87p+%C4%90%E1%BB%93ng+Nai&output=embed",
+      "mapLink": "https://maps.google.com/?q=792+Xa+l%E1%BB%99+H%C3%A0+N%E1%BB%99i+Tam+Hi%E1%BB%87p+%C4%90%E1%BB%93ng+Nai"
+    }
+  },
+  "hero": {
+    "tagline": "Save the Date",
+    "quote": "Anh chỉ muốn dắt tay em đi qua hết những mùa của đời mình.",
+    "bgImage": "src/assets/images/20x30 10T/bia.jpg"
+  },
+  "story": {
+    "title": "Hành trình của chúng mình",
+    "subtitle": "Mỗi khoảnh khắc đều là một mảnh ghép của tình yêu",
+    "timeline": [
+      {
+        "date": "Mùa gặp gỡ",
+        "title": "Lần đầu gặp gỡ",
+        "description": "Có những cuộc gặp tưởng như tình cờ, nhưng hoá ra đã được duyên sắp đặt từ rất lâu.",
+        "image": "/src/assets/images/file le/VHH_5802.jpg"
+      },
+      {
+        "date": "Mùa thương",
+        "title": "Hẹn hò chính thức",
+        "description": "Từ những điều rất nhỏ — một ánh nhìn, một câu nói — hai đứa nhận ra mình đã thuộc về nhau.",
+        "image": "/src/assets/images/file le/VHH_5989.jpg"
+      },
+      {
+        "date": "Mùa rong ruổi",
+        "title": "Cùng nhau đi xa",
+        "description": "Cùng nhau đi qua những con đường lạ, mới hiểu rằng có nhau là đủ để gọi mọi nơi là nhà.",
+        "image": "/src/assets/images/file le/VHH_6034.jpg"
+      },
+      {
+        "date": "Mùa hẹn ước",
+        "title": "Cầu hôn",
+        "description": "Sau bao mùa thương, anh chọn dừng lại — và xin được cùng em đi tiếp đến cuối cuộc đời.",
+        "image": "/src/assets/images/file le/VHH_6277.jpg"
+      },
+      {
+        "date": "Mùa về chung nhà",
+        "title": "Ngày trọng đại",
+        "description": "Ngày 06.06.2026, hai đứa chính thức về chung một mái nhà — bắt đầu một chương mới mang tên \"chúng mình\".",
+        "image": "/src/assets/images/file le/VHH_7023.jpg"
+      }
+    ]
+  },
+  "quote": {
+    "text": "Em là người con gái mà anh muốn cùng nắm tay đi qua tất cả những mùa đông phía trước.",
+    "author": "— Hoàng Long"
+  },
+  "gallery": [
+    { "src": "/src/assets/images/20x30 10T/My New Project_01.jpg", "alt": "Pre-wedding 1", "caption": "Bình yên" },
+    { "src": "/src/assets/images/20x30 10T/My New Project_02.jpg", "alt": "Pre-wedding 2", "caption": "Khẽ chạm" },
+    { "src": "/src/assets/images/20x30 10T/My New Project_03.jpg", "alt": "Pre-wedding 3", "caption": "Hoàng hôn" },
+    { "src": "/src/assets/images/20x30 10T/My New Project_04.jpg", "alt": "Pre-wedding 4", "caption": "Hẹn ước" },
+    { "src": "/src/assets/images/20x30 10T/My New Project_05.jpg", "alt": "Pre-wedding 5", "caption": "Mùa thương" },
+    { "src": "/src/assets/images/20x30 10T/My New Project_06.jpg", "alt": "Pre-wedding 6", "caption": "Cùng nhau" },
+    { "src": "/src/assets/images/20x30 10T/My New Project_07.jpg", "alt": "Pre-wedding 7", "caption": "Sương khói" },
+    { "src": "/src/assets/images/20x30 10T/My New Project_08.jpg", "alt": "Pre-wedding 8", "caption": "Lời thề" }
+  ],
+  "video": {
+    "title": "Save the Date Film",
+    "description": "Một đoạn phim ngắn về hai đứa",
+    "src": "https://drive.google.com/file/d/1MvW6jwnWOcBnS4brDxTNyx-0zDtdekiR/preview",
+    "poster": "/src/assets/images/20x30 10T/bia.jpg"
+  },
+  "music": {
+    "autoplay": true,
+    "tracks": [
+      {
+        "title": "Perfect — Ed Sheeran (Instrumental)",
+        "src": "/src/assets/music/Perfect.mp3"
+      },
+      {
+        "title": "A Thousand Years (Piano)",
+        "src": "/src/assets/music/A-Thousand-Years.mp3"
+      }
+    ]
+  },
+  "gift": {
+    "title": "Hộp mừng cưới",
+    "note": "Sự hiện diện của bạn là món quà lớn nhất. Nếu muốn gửi lời chúc qua phong bì điện tử, chúng mình xin trân trọng cảm ơn.",
+    "accounts": [
+      {
+        "owner": "Nguyễn Hoàng Long",
+        "bank": "BIDV",
+        "branch": "Ngân hàng TMCP Đầu tư và Phát triển Việt Nam",
+        "number": "5620709419",
+        "qr": "/src/assets/images/qr/qr.jpg"
+      },
+      {
+        "owner": "Nguyễn Thị Thu Phương",
+        "bank": "BIDV",
+        "branch": "Ngân hàng TMCP Đầu tư và Phát triển Việt Nam",
+        "number": "5620709419",
+         "qr": "/src/assets/images/qr/qr.jpg"
+      }
+    ]
+  },
+  "thanks": {
+    "title": "Lời cảm ơn",
+    "message": "Cảm ơn bạn đã là một phần của ngày trọng đại trong cuộc đời chúng mình. Mong rằng tình thân này sẽ còn được giữ trọn vẹn, dài lâu — như đúng những gì hôm nay chúng mình hứa hẹn với nhau.",
+    "signature": "— Long & Phương"
+  }
+}
