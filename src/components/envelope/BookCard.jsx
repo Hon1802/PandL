@@ -23,9 +23,8 @@ const BookCard = ({ data, onEnter }) => {
       style={{ perspective: 2400 }}
     >
       <motion.div
-        className="relative grid grid-cols-2 overflow-hidden"
+        className="relative grid grid-cols-1 md:grid-cols-2 overflow-hidden md:aspect-[3/2]"
         style={{
-          aspectRatio: '3/2',
           transformStyle: 'preserve-3d',
           background: 'var(--w-surface)',
           borderRadius: 'var(--w-radius-card)',
@@ -36,7 +35,7 @@ const BookCard = ({ data, onEnter }) => {
         transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
       >
         <div
-          className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-px pointer-events-none z-20"
+          className="hidden md:block absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-px pointer-events-none z-20"
           style={{
             background:
               'linear-gradient(to bottom, transparent, var(--w-border) 20%, var(--w-border) 80%, transparent)',
@@ -44,7 +43,7 @@ const BookCard = ({ data, onEnter }) => {
         />
 
         <motion.div
-          className="relative overflow-hidden"
+          className="relative overflow-hidden aspect-[16/10] md:aspect-auto"
           style={{
             transformOrigin: 'right center',
             transformStyle: 'preserve-3d',
