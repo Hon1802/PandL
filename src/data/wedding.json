@@ -147,10 +147,10 @@
     "accounts": [
       {
         "owner": "Nguyễn Hoàng Long",
-        "bank": "BIDV",
-        "branch": "Ngân hàng TMCP Đầu tư và Phát triển Việt Nam",
-        "number": "5620709419",
-        "qr": "/src/assets/images/qr/qr.jpg"
+        "bank": "Vietcombank",
+        "branch": "Ngân hàng TMCP Ngoại thương Việt Nam",
+        "number": "10216694344",
+        "qr": "/src/assets/images/qr/qr_long.png"
       },
       {
         "owner": "Nguyễn Thị Thu Phương",
