@@ -230,6 +230,52 @@ button {
   margin-bottom: 1rem;
 }
 
+/* ---------- Gallery catalog (Swiper coverflow) ---------- */
+.gallery-swiper {
+  width: 100%;
+  overflow: visible;
+}
+.gallery-swiper .swiper-wrapper {
+  align-items: center;
+}
+.gallery-swiper .swiper-slide {
+  height: auto;
+  transition: opacity 0.5s ease, filter 0.5s ease;
+}
+.gallery-swiper .swiper-slide:not(.swiper-slide-active) {
+  opacity: 0.45;
+  filter: saturate(0.7);
+}
+.gallery-swiper .swiper-button-next,
+.gallery-swiper .swiper-button-prev {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: var(--w-surface);
+  border: 1px solid var(--w-border);
+  box-shadow: var(--w-shadow-button);
+  backdrop-filter: blur(8px);
+}
+.gallery-swiper .swiper-button-next::after,
+.gallery-swiper .swiper-button-prev::after {
+  font-size: 18px;
+  font-weight: 700;
+}
+.gallery-swiper .swiper-pagination-bullet {
+  background: var(--w-text-muted);
+  opacity: 0.5;
+}
+.gallery-swiper .swiper-pagination-bullet-active {
+  background: var(--w-primary);
+  opacity: 1;
+}
+@media (max-width: 639px) {
+  .gallery-swiper .swiper-button-next,
+  .gallery-swiper .swiper-button-prev {
+    display: none;
+  }
+}
+
 /* ---------- Image placeholder gradient (when image is missing) ---------- */
 .img-placeholder {
   background:

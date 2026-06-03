@@ -5,8 +5,21 @@ import {
   HiOutlineChevronRight,
   HiOutlineXMark,
 } from 'react-icons/hi2';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import {
+  EffectCoverflow,
+  Navigation,
+  Pagination,
+  Keyboard,
+  Autoplay,
+} from 'swiper/modules';
 import SectionTitle from '../SectionTitle.jsx';
 import SafeImage from '../SafeImage.jsx';
+
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const Gallery = ({ data }) => {
   const [active, setActive] = useState(null);
@@ -39,47 +52,78 @@ const Gallery = ({ data }) => {
           eyebrow="Pre-wedding"
           script="Memories"
           title="Khoảnh khắc của chúng mình"
+          subtitle="Lật qua từng trang để xem lại những khoảnh khắc của chúng mình."
         />
 
-        <div className="masonry">
+        <Swiper
+          modules={[EffectCoverflow, Navigation, Pagination, Keyboard, Autoplay]}
+          effect="coverflow"
+          grabCursor
+          centeredSlides
+          loop
+          slidesPerView="auto"
+          keyboard={{ enabled: true }}
+          autoplay={{
+            delay: 4500,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 200,
+            modifier: 1.8,
+            slideShadows: false,
+          }}
+          navigation
+          pagination={{ clickable: true }}
+          className="gallery-swiper"
+          style={{
+            '--swiper-navigation-color': 'var(--w-primary)',
+            '--swiper-pagination-color': 'var(--w-primary)',
+            '--swiper-navigation-size': '28px',
+            paddingTop: '0.5rem',
+            paddingBottom: '3.5rem',
+          }}
+        >
           {data.gallery.map((g, i) => (
-            <motion.button
-              type="button"
+            <SwiperSlide
               key={g.src}
-              onClick={() => setActive(i)}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-50px' }}
-              transition={{ duration: 0.7, delay: (i % 6) * 0.05 }}
-              whileHover={{ y: -4 }}
-              className="masonry-item block w-full group relative overflow-hidden focus:outline-none"
-              style={{
-                borderRadius: 'var(--w-radius-image)',
-                boxShadow: 'var(--w-shadow-card)',
-              }}
+              className="!w-[86%] sm:!w-[440px] md:!w-[520px] lg:!w-[600px] max-w-[92vw]"
             >
-              <SafeImage
-                src={g.src}
-                alt={g.alt}
-                className="w-full h-auto object-cover transition-transform duration-[1.4s] group-hover:scale-105"
-              />
-              <div
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-5"
+              <button
+                type="button"
+                onClick={() => setActive(i)}
+                className="group relative block w-full overflow-hidden focus:outline-none"
                 style={{
-                  background:
-                    'linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 60%)',
+                  borderRadius: 'var(--w-radius-image)',
+                  boxShadow: 'var(--w-shadow-card)',
+                  border: '1px solid var(--w-border)',
                 }}
               >
-                <span
-                  className="w-script text-2xl"
-                  style={{ color: '#fff' }}
+                <SafeImage
+                  src={g.src}
+                  alt={g.alt}
+                  className="w-full h-auto block transition-transform duration-[1.4s] group-hover:scale-105"
+                />
+                <div
+                  className="absolute inset-x-0 bottom-0 p-5 flex items-end"
+                  style={{
+                    background:
+                      'linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 70%)',
+                  }}
                 >
-                  {g.caption}
-                </span>
-              </div>
-            </motion.button>
+                  <span
+                    className="w-script text-2xl md:text-3xl"
+                    style={{ color: '#fff' }}
+                  >
+                    {g.caption}
+                  </span>
+                </div>
+              </button>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
 
       <AnimatePresence>
