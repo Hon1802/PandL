@@ -30,9 +30,9 @@ const baseTiming = {
 };
 
 const baseFonts = {
-  display: '"Playfair Display", serif',
+  display: '"Cormorant", "Playfair Display", serif',
   serif: '"Cormorant Garamond", serif',
-  script: '"Great Vibes", cursive',
+  script: '"Pinyon Script", cursive',
   sans: '"Inter", system-ui, sans-serif',
 };
 

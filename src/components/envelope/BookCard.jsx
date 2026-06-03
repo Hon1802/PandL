@@ -153,20 +153,30 @@ const BookCard = ({ data, onEnter }) => {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: unfolded ? 1 : 0, y: unfolded ? 0 : 18 }}
             transition={{ duration: 0.8, delay: 1.6 }}
-            className="mt-5 text-xs md:text-sm tracking-[0.25em] uppercase"
-            style={{ color: 'var(--w-text-muted)' }}
+            className="mt-5 w-full max-w-xs space-y-3"
           >
-            {data.event.displayDate}
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 18 }}
-            animate={{ opacity: unfolded ? 1 : 0, y: unfolded ? 0 : 18 }}
-            transition={{ duration: 0.8, delay: 1.7 }}
-            className="mt-2 text-sm md:text-base"
-            style={{ color: 'var(--w-text-soft)' }}
-          >
-            {data.event.reception.venue}
+            {[data.event.ceremony, data.event.reception].map((ev) => (
+              <div key={ev.label}>
+                <div
+                  className="text-[10px] md:text-xs tracking-[0.25em] uppercase"
+                  style={{ color: 'var(--w-primary)' }}
+                >
+                  {ev.label} · {ev.sideLabel}
+                </div>
+                <div
+                  className="text-xs md:text-sm"
+                  style={{ color: 'var(--w-text-soft)' }}
+                >
+                  {ev.displayDate}
+                </div>
+                <div
+                  className="text-xs md:text-sm"
+                  style={{ color: 'var(--w-text)' }}
+                >
+                  {ev.venue}
+                </div>
+              </div>
+            ))}
           </motion.div>
 
           <motion.div
