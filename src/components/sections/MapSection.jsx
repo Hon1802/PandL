@@ -20,7 +20,7 @@ const MapSection = ({ data }) => {
           eyebrow="Location"
           script="See you there"
           title="Hẹn gặp bạn tại"
-          subtitle={ev.address}
+          subtitle={ev.venue}
         />
 
         <div className="flex justify-center mb-10">
